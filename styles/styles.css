@@ -1,0 +1,52 @@
+/* == GENERAL == */
+
+#colorreference  {
+    color: #862525, #cacaca, #202020, #dadada, #5a1111, #b13f3f, 
+
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+/* === LAYOUT === */
+.header-block {
+    padding-top: 30em;
+    text-align: left; 
+    background-color: #cacaca;
+    background-image: url(../images/Lina-Bo-Bardi-on-the-ship-Almirante-Jaceguay-on-her-way-to-Brasil-in-1946.jpg);
+    background-size: cover; 
+    background-position: 50% 35%;
+    width: 100%;
+    margin: auto;
+
+}
+
+.title, .subtitle {
+    background-color: #862525; 
+    color: #cacaca;
+    width: 100%; 
+    padding: 1em 1em 0 1em;
+}
+
+.title {
+    margin-bottom: -.5em;
+}
+body {
+    background-color: #862525; 
+    margin: 0;
+}
+
+.content-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: around;
+    
+}
+
+img {
+    width: 100%;
+}
+/* === TYPOGRAPHY === */ 
+
+
