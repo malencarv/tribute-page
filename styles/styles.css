@@ -1,9 +1,5 @@
 /* == GENERAL == */
 
-#colorreference  {
-    color: #862525, #cacaca, #202020, #dadada, #5a1111, #b13f3f, 
-
-}
 
 html {
     font-family: 'Lato', sans-serif;
@@ -48,18 +44,11 @@ body {
     margin-bottom: auto;
 }
 
-
-
 .content-main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0em 15em;
-    background-color: white;
-}
-
-.content-first {
-    background-color: darkblue;
+    margin: 10em 10em 0em 10em;
 }
 
 .description {
@@ -82,11 +71,123 @@ img {
     color: #202020;
     padding:.5em;
     margin-top: -.3em;
+    margin-bottom: 7em;
 }
 
 .timeline-section {
-    
+    background-color: #cacaca; 
 }
+
+.timeline-header {
+    margin: auto;
+    padding: .5em;
+    background-color: #202020;
+    color: #cacaca; 
+}
+
+ul {
+    margin: auto; 
+    color: #202020; 
+    padding: .5em;
+}
+
+li {
+    padding: 1em; 
+    border-bottom: 1px solid #202020;
+}
+
+li:last-child {
+    border: none;
+}
+
+.learnmore-link {
+    width: 120%;
+    margin: 3em 0;
+    color: #cacaca;
+    border-bottom: 1.5px solid #cacaca;
+    border-top: 1.5px solid #cacaca;
+}
+
+.learnmore-min {
+    display: none;
+}
+
+footer {
+    padding: auto;
+    margin: 2em auto -1em auto; 
+    background-color:#5a1111;
+    color: #cacaca; 
+}
+
+.author-min {
+    display: none;
+}
+
+
+/* === LAYOUT MEDIA QUERIES === */
+
+
+@media (max-width: 950px) {
+    .header-block {
+        padding-top: 15em;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -12.5vmax;
+    }
+
+    .title {
+        padding-bottom: 1rem;
+    }
+
+    .content-main {
+        margin: auto;
+    }
+
+    .description {
+        margin-top: 2em;
+    }
+
+    .fig-caption {
+        margin-top: -.5em;
+    }
+
+    .learnmore-link {
+        display: none;
+    }
+
+    .learnmore-min {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        border-top: 2px solid #cacaca; 
+        border-bottom: 2px solid #cacaca; 
+        width: 90%
+    }
+
+
+    .button {
+        background-color: #aa3333;
+        padding: 2rem;
+        border-radius: 0;
+        border-color: #aa3333;
+        width: auto;
+        margin: 1em;
+    }
+
+    .author-min {
+        display: block;
+        padding: 2em 0;
+    }
+
+    .pic-link {
+        border-radius: 50%;
+        width: 5em;
+        background-color: white;
+        border-bottom: 1.5px solid white;
+    }
+}
+
 /* === TYPOGRAPHY === */ 
 
 
@@ -116,8 +217,9 @@ img {
 }
 
 ul {
+    list-style-type: none;
     font-size: 1.5rem;
-    text-align: center;
+    text-align:justify;
 }
 
 strong {
@@ -125,17 +227,85 @@ strong {
 }
 
 .learnmore-link {
+    text-align: center;
     font-size: 2rem;
 }
 
-.inst-link {
+.inst-link, .github-link {
+    color: #e0e0e0;
+    text-decoration: none;
     font-weight: 800;
 }
 
 .author {
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
 }
 
-.github-link: {
-    font-weight: 800;
+/* === TYPOGRAPHY MEDIA QUERIES === */
+
+
+@media (max-width: 1200px) {
+    .header-block{
+        text-align: center;
+    }
+
+    .title {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .description {
+        font-size: 1.5rem;
+        text-align: justify;
+        word-spacing: normal;
+    }
+
+    .fig-caption {
+        font-size: .7rem;
+        text-align: right;
+    }
+
+    .timeline-header {
+        font-size: 2rem;
+        text-align: justify;
+    }
+
+    strong {
+        font-weight: 900;
+    }
+
+    .learnmore-min {
+        font-size: 1.5rem; 
+        font-weight: 900;
+        text-align: justify;
+        color: #cacaca;
+    }
+
+    .learnmore-min-paragraph {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .instlink-min {
+        text-decoration:none;
+        font-size: 2rem;
+        font-weight: 900;
+        color:#e0e0e0; 
+        text-align: center;
+    }
+
+    .author-min {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .author, .github-link {
+       display: none;
+    }
 }
