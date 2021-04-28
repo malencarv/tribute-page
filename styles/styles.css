@@ -23,8 +23,7 @@ body {
     background-image: url(../images/Lina-Bo-Bardi-on-the-ship-Almirante-Jaceguay-on-her-way-to-Brasil-in-1946.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
+    background-position: 30% 40%;
     margin: auto;
 
 }
@@ -76,6 +75,7 @@ img {
 
 .timeline-section {
     background-color: #cacaca; 
+    width: 100%;
 }
 
 .timeline-header {
@@ -101,7 +101,7 @@ li:last-child {
 }
 
 .learnmore-link {
-    width: 120%;
+    width: 100%;
     margin: 3em 0;
     color: #cacaca;
     border-bottom: 1.5px solid #cacaca;
@@ -117,6 +117,11 @@ footer {
     margin: 2em auto -1em auto; 
     background-color:#5a1111;
     color: #cacaca; 
+}
+
+.author {
+    margin: auto;
+    padding: 1em;
 }
 
 .author-min {
@@ -188,6 +193,24 @@ footer {
     }
 }
 
+
+
+@media (min-width: 2300px) {
+
+        .header-block {
+            padding-top: 65em;
+        }
+
+        li {
+            border-bottom: 3px solid #202020;
+        }
+
+        .learnmore-link {
+            border-bottom: 3px solid #cacaca;
+            border-top: 3px solid #cacaca;
+        }
+}
+
 /* === TYPOGRAPHY === */ 
 
 
@@ -237,9 +260,12 @@ strong {
     font-weight: 800;
 }
 
+footer {
+    font-size: 2rem;
+}
+
 .author {
     text-align: center;
-    font-size: 1rem;
 }
 
 /* === TYPOGRAPHY MEDIA QUERIES === */
@@ -307,5 +333,61 @@ strong {
 
     .author, .github-link {
        display: none;
+    }
+}
+
+
+
+@media (min-width: 1430px) {
+
+    .title {
+        font-size: 8.5rem;
+        font-weight: 1000; 
+    }
+    
+    .subtitle {
+        font-size: 4.5rem;
+    }
+    
+    .description, .introduction {
+        font-size: 3.5rem;
+    }
+    
+    .fig-caption {
+        font-size: 2.5rem;
+        font-weight: 800;
+        text-align: right;
+    }
+    
+    .timeline-header {
+        font-size: 3.5rem;
+        font-weight: 800;
+        text-align: center;
+    }
+    
+    ul {
+        list-style-type: none;
+        font-size: 4rem;
+        text-align:justify;
+    }
+    
+    strong {
+        font-weight: 800;
+    }
+    
+    .learnmore-link {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    
+    .inst-link, .github-link {
+        color: #e0e0e0;
+        text-decoration: none;
+        font-weight: 800;
+    }
+    
+    .author {
+        text-align: center;
+        font-size: 3.5rem;
     }
 }
